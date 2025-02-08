@@ -1,0 +1,312 @@
+*{
+  box-sizing: border-box;
+}
+body {
+  background-color: #333;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* join section ................... */
+.join{
+  color: white;
+  border: 1px solid red;
+}
+
+.join-btn li{
+  list-style: none;
+  display: inline;
+  margin: 2px;
+}
+/* Nav Bar ........................ */
+nav {
+  height: 50px;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 20px;
+  position: sticky;
+  width: 100%;
+  height: 70px;
+  z-index: 1;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.menu ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li:hover{
+  transform: scale(1.2);
+  transition-duration: 0.5s;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.logo a {
+  color: red;
+  text-shadow: -1px -1px 0 white;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.menu li {
+  margin: 0 10px;
+}
+
+.menu li:hover{
+  cursor: pointer;
+}
+
+/* Slider Section............................ */
+.slider {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+.slider-data h1{
+  background-color: #41414119;
+}
+.slider-data h1 span{
+  color: white;
+}
+
+.slide {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.slider-data{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: red;
+  stroke: #333;
+  height: 400px;
+  width: 100%;
+}
+
+.slide1 {
+  background-image: url('images/slide\ 1.jpg');
+}
+
+.slide2 {
+  background-image: url('images/slide\ 2.jpg');
+}
+
+.slide3 {
+  background-image: url('images/slide\ 3.jpg');
+}
+
+.slide4 {
+  background-image: url('images/slide\ 4.jpg');
+}
+
+.slide1, .slide2, .slide3, .slide4{
+   z-index: -1;
+   opacity: 0.85;
+   filter: blur(3px);
+}
+
+.slide.active {
+  display: block;
+}
+
+.buttons {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover{
+  transform: scale(1.090);
+}
+
+/* ....................................Top Section......................... */
+.topSection{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.topSection .heading h1{
+  color: white;
+}
+.cards{
+  display: flex;
+  justify-content: center;
+}
+.topSection .card{
+  width: 500px;
+  height: 300px;
+}
+.topSection .card h2{
+  color: red;
+}
+.topSection .card:hover{
+  transform: scale(1.050);
+  box-shadow: 1px 1px 5px 1px grey;
+}
+.topSection .card img{
+  padding: 0px 30px;
+  box-sizing: border-box;
+}
+
+/* Extra Features End*/
+main{
+  display: block;
+  width: 95%;
+  box-sizing: border-box;
+}
+
+.container{
+  display: flex;
+  margin: 20px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  width: 200%;
+  height: 200px;
+  overflow: hidden;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.card-content iframe{
+  display: none;
+}
+
+.card:hover {
+  transform: scale(1.050);
+  box-shadow: 2px 2px 10px 3px rgb(26, 24, 24);
+}
+
+.card img {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+}
+
+.card h4 {
+  font-size: 1.2rem;
+  color: red;
+  margin: -0.0001px 0px;
+}
+
+/* Adds Section */
+.addSection{
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  margin-left: 50px;
+  width: 95%;
+  padding: 20px 10px;
+}
+
+/* Copyright Bar */
+ 
+.copyright {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 99;
+}
+
+.social-icons {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 20px;
+}
+
+.social-icons a {
+  display: inline-block;
+  color: #fff;
+  font-size: 30px;
+  padding: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.social-icons a:hover {
+  transform: translateY(-5px);
+}
+
+.social-icons a i {
+  margin-right: 5px;
+}
+
+.fab {
+  font-size: 20px;
+}
+
+.fa-facebook-f {
+  color: #3b5998;
+}
+
+.fa-twitter {
+  color: #1da1f2;
+}
+
+.fa-instagram {
+  color: #e4405f;
+}
+
+.fa-youtube {
+  color: #cd201f;
+}
